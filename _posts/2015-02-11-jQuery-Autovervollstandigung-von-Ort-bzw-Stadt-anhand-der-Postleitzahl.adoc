@@ -2,17 +2,34 @@
 
 :published_at: 2015-02-11
 
-Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare, Formulare. Die Usability steht dabei im Vordergrund. Schließlich sollen die Formulare so leicht wie möglich zu bedienen sein. Ein Hilfsmittel ist es, den Ort oder die Stadt anhand der PLZ automatisch auszufüllen, so dass der User es nicht selbst tun muss. Einfinger-System-Nutzer werden es Dir danken. Folgendes jQuery nutzt den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
+Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare, Formulare. Die Usability steht dabei im Vordergrund. Schließlich sollen die Formulare so leicht wie möglich zu bedienen sein. Ein Hilfsmittel ist es, den Ort oder die Stadt anhand der PLZ automatisch auszufüllen, so dass der User es nicht selbst tun muss. Einfinger-System-Nutzer werden es Dir danken. 
 
-  $('#zip').blur(function() {
-      var city = $('#city');
-      if (!city.val()) {
+## HTML inputs
+
+Ausgangspunkt sind zwei input-Felder in HTML
+
+  <input value="" size="20" name="form[plz]" id="plz" type="text">
+  <input value="" size="20" name="form[ort]" id="ort" type="text">
+
+## jQuery function
+
+Folgendes jQuery nutzt den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
+
+  $('#plz').keyup(function() {
+      if ($(this).val().length > 4) {
+          var ort = $('#ort');
           $.getJSON('http://www.geonames.org/postalCodeLookupJSON?&country=DE&callback=?', {postalcode: this.value }, function(response) {
-              if (!city.val() && response && response.postalcodes.length && response.postalcodes[0].placeName) {
-                  city.val(response.postalcodes[0].placeName);
+              if (response && response.postalcodes.length && response.postalcodes[0].placeName) {
+                  ort.val(response.postalcodes[0].placeName);
               }
-          })
+          })		
+      } else {
+          $('#ort').val('');
       }
   });
+  
+## Erklärung
+
+Dieses jQuery sucht nach der id #plz, um es mit einer Funktion in Verbindung zu bringen, die ausgeführt wird, sobald eine Tasteneingabe (keyup) im input stattfindet. Dabei wartet es ab, bis mehr als 4 Zeichen eingegeben sind. Ist das der Fall, nimmt es den Wert und schaut bei geonames.org nach dem passenden Ort nach, um ihn dann als Wert dem Element #ort zu übergeben. Ansonten (else): Wird die Eingabe der PLZ wieder gelöscht, wird der Wert des Ortes auch wieder zurückgenommen.
 
 Will man nicht auf SSL verzichten, kommt man nicht drum herum die eigene Funktion zu skripten. Hilfreich ist hierbei http://download.geonames.org/export/zip/[die Tabelle der PLZ als Download].
