@@ -10,3 +10,19 @@ Our team desperately needs coffee, but none of us dare open the office door.
 
 To leave means code dismemberment and certain death.
 
+
+# Überschrift
+
+## Markdown
+
+**Lorem** _Ipsum_ http://edvas.de[dolor] text
+
+- Lorem
+- Ipsum
+- Dolor
+
+> Breakpoint ~ Einstein
+
+	defined( '_JEXEC' ) or die; 
+
+Code Example
