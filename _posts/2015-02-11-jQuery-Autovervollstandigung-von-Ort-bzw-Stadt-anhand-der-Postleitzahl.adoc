@@ -1,0 +1,9 @@
+# jQuery: Autovervollständigung von Ort bzw. Stadt anhand der Postleitzahl
+
+:published_at: 2015-02-11
+
+Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Barre: Formulare, Formulare. Die Usability steht dabei im Vordergrund. Schließlich sollen die Formulare so leicht wie möglich zu bedienen sein. Ein Hilfsmittel ist es, den Ort oder die Stadt anhand der PLZ automatisch auszufüllen, so dass der User es nicht selbst tun muss. Einfinger-System-Nutzer werden es Dir danken. Folgendes jQuery nutz den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
+
+<script src="https://gist.github.com/Bloggerschmidt/e69dba7c7371947450df.js"></script>
+
+Will man nicht auf SSL verzichten, kommt man nicht drum herum die eigene Funktion zu skripten. Hilfreich ist hierbei die Tabelle der PLZ unter http://download.geonames.org/export/zip/ 
