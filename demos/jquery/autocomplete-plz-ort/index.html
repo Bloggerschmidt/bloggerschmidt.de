@@ -6,24 +6,46 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>jQuery: Autovervollständigung von Ort bzw. Stadt anhand der Postleitzahl</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 
 <body>
-	<h1>Demo</h1>
 
-	<h2>jQuery: Autovervollständigung von Ort bzw. Stadt anhand der Postleitzahl</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-md-offset-3">
+				
+				<h1 class="text-info">Demo</h1>
 
-	<form action="">
-		<input value="" size="5" name="form[plz]" id="plz" type="text" placeholder="PLZ">
-		<input value="" size="20" name="form[ort]" id="ort" type="text" placeholder="Ort (automatisch)" readonly="">
-	</form>
+				<h3 class="text-muted">jQuery: Autovervollständigung von Ort bzw. Stadt anhand der Postleitzahl</h3>
 
-	<p>Tippe eine f&uuml;nfstellige Postleitzahl ein und warte ein Moment.</p>
-	<p>Siehe Quelltext zur Implementierung</p>
-	<p><a href="http://bloggerschmidt.github.io/2015/02/11/jQuery-Autovervollstandigung-von-Ort-bzw-Stadt-anhand-der-Postleitzahl.html">Zur&uuml;ck zum Beitrag</a></p>
+				<br>
+
+				<form action="">
+					<div class="well">
+						<div class="row">
+							<div class="col-xs-4">
+								<input value="" size="5" name="form[plz]" id="plz" type="text" placeholder="PLZ" class="form-control">
+							</div>
+							<div class="col-xs-8">
+								<input value="" size="20" name="form[ort]" id="ort" type="text" placeholder="Ort (automatisch)" class="form-control" readonly="">
+							</div>
+						</div>
+					</div>
+				</form>
+				
+				<div class="alert alert-info" role="alert">
+					<p><strong>Hinweis:</strong> Tippe eine f&uuml;nfstellige Postleitzahl ein und warte einen Augenblick. Entferne dann wieder die PLZ.</p>
+				</div>
+				<p>(Siehe Quelltext zur Implementierung)</p>
+				<p><a href="http://bloggerschmidt.github.io/2015/02/11/jQuery-Autovervollstandigung-von-Ort-bzw-Stadt-anhand-der-Postleitzahl.html" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Zur&uuml;ck zum Beitrag</a></p>
+
+			</div>
+		</div>
+	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 
