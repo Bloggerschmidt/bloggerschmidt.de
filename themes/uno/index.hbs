@@ -5,9 +5,9 @@
     <ol class="post-list">
       {{#foreach posts}}
       <li>
-        <h2 class="post-list__post-title post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h2>
+        <h2 class="post-list__post-title post-title"><a href="{{url}}" title="Link zu {{{title}}}">{{{title}}}</a></h2>
         <p class="excerpt">{{excerpt}}&hellip;</p>
-        <div class="post-list__meta"><time datetime="{{date format="DD.mm.YYYY"}}" class="post-list__meta--date date">{{date format="DD.mm.YYYY"}}</time> &#8226; <span class="post-list__meta--tags tags">{{tags prefix="on "}}</span></div>
+        <div class="post-list__meta"><time datetime="{{date format="DD.MM.YYYY"}}" class="post-list__meta--date date">{{date format="DD.MM.YYYY"}}</time> &#8226; <span class="post-list__meta--tags tags">{{tags prefix="on "}}</span></div>
         <hr class="post-list__divider" />
       </li>
       {{/foreach}}
