@@ -1,4 +1,4 @@
-# jQuery: Auto&shy;vervollständigung von Ort bzw. Stadt anhand der Postleitzahl
+# jQuery: Autovervollständigung von Ort bzw. Stadt anhand der Postleitzahl
 
 :published_at: 2015-02-11
 
