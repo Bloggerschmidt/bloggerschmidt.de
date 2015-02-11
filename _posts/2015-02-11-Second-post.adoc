@@ -1,0 +1,5 @@
+# Second post
+
+:published_at: 2015-02-11
+
+What should I say? A second post ...
