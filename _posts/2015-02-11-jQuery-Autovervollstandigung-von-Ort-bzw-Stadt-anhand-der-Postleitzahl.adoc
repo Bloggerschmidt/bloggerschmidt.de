@@ -12,7 +12,7 @@ http://bloggerschmidt.github.io/demos/jquery/autocomplete-plz-ort/[Siehe jQuery 
 
 Ausgangspunkt sind zwei input-Felder in HTML
 
-  <input value="" size="20" name="form[plz]" id="plz" type="text">
+  <input value="" size="5" name="form[plz]" id="plz" type="text">
   <input value="" size="20" name="form[ort]" id="ort" type="text">
 
 ## jQuery function
