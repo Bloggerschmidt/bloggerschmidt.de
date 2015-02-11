@@ -45,7 +45,7 @@
         <div class="panel-main__inner panel-inverted">
         <div class="panel-main__content">
     
-            <h1 class="panel-cover__title panel-title"><a href="http://Bloggerschmidt.github.io" title="Link zur Website von Bloggerschmidt">Bloggerschmidt</a></h1>
+            <h1 class="panel-cover__title panel-title"><a href="http://Bloggerschmidt.github.io" title="Startseite von Bloggerschmidt">Bloggerschmidt</a></h1>
             <hr class="panel-cover__divider" />
             <p class="panel-cover__description">Hier schreibt Alexander Schmidt als Webentwickler rund um Joomla!, jQuery (JavaScript), PHP, HTML und CSS</p>
             <hr class="panel-cover__divider panel-cover__divider--secondary" />
@@ -54,7 +54,7 @@
     
               <nav class="cover-navigation cover-navigation--primary">
                 <ul class="navigation">
-                  <li class="navigation__item"><a href="/#blog" title="Link zu Bloggerschmidt" class="blog-button">Blog</a></li>
+                  <li class="navigation__item"><a href="/#blog" title="Blog von Bloggerschmidt" class="blog-button">Blog</a></li>
                 </ul>
               </nav>
     
@@ -66,7 +66,7 @@
               
                   <!-- Twitter -->
                   <li class="navigation__item">
-                    <a href="https://twitter.com/Bloggerschmidt" title="Twitter account">
+                    <a href="https://twitter.com/Bloggerschmidt" title="Twitter Account">
                       <i class='icon icon-social-twitter'></i>
                       <span class="label">Twitter</span>
                     </a>
@@ -75,7 +75,7 @@
               
                   <!-- Github -->
                   <li class="navigation__item">
-                    <a href="https://github.com/Bloggerschmidt" title="Github account">
+                    <a href="https://github.com/Bloggerschmidt" title="Github Account">
                       <i class='icon icon-social-github'></i>
                       <span class="label">Github</span>
                     </a>
@@ -88,9 +88,9 @@
               
                   <!-- Email -->
                   <li class="navigation__item">
-                    <a href="mailto:mail@bloggerschmidt.de" title="Email mail@bloggerschmidt.de">
+                    <a href="mailto:mail@bloggerschmidt.de" title="E-Mail mail@bloggerschmidt.de">
                       <i class='icon icon-mail'></i>
-                      <span class="label">Email</span>
+                      <span class="label">E-Mail</span>
                     </a>
                   </li>
               
@@ -141,7 +141,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
 
     <script type="text/javascript" src="http://Bloggerschmidt.github.io/themes/uno/assets/js/main.js?v=1.0.0"></script>
-    
+    <script type="text/javascript" src="http://Bloggerschmidt.github.io/themes/uno/assets/js/hyphens.js?v=1.0.0"></script>
+    <script type="text/javascript">
+    	Hyphenator.config({
+    		displaytogglebox : true,
+    		minwordlength : 4
+    	});
+    	Hyphenator.run();
+    </script>
 
 </body>
 </html>
