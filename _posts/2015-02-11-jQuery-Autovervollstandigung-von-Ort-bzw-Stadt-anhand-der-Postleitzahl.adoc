@@ -15,4 +15,4 @@ Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare
       }
   });
 
-Will man nicht auf SSL verzichten, kommt man nicht drum herum die eigene Funktion zu skripten. Hilfreich ist hierbei http://download.geonames.org/export/zip/[die Tabelle der PLZ als Download].  
+Will man nicht auf SSL verzichten, kommt man nicht drum herum die eigene Funktion zu skripten. Hilfreich ist hierbei http://download.geonames.org/export/zip/[die Tabelle der PLZ als Download].
