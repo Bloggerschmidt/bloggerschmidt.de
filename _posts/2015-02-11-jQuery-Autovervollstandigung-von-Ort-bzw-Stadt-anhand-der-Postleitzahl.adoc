@@ -2,7 +2,7 @@
 
 :published_at: 2015-02-11
 
-Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare, Formulare. Die Usability steht dabei im Vordergrund. Schließlich sollen die Formulare so leicht wie möglich zu bedienen sein. Ein Hilfsmittel ist es, den Ort oder die Stadt anhand der PLZ automatisch auszufüllen, so dass der User es nicht selbst tun muss. Einfinger-System-Nutzer werden es Dir danken. Folgendes jQuery nutz den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
+Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare, Formulare. Die Usability steht dabei im Vordergrund. Schließlich sollen die Formulare so leicht wie möglich zu bedienen sein. Ein Hilfsmittel ist es, den Ort oder die Stadt anhand der PLZ automatisch auszufüllen, so dass der User es nicht selbst tun muss. Einfinger-System-Nutzer werden es Dir danken. Folgendes jQuery nutzt den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
 
   $('#zip').blur(function() {
       var city = $('#city');
