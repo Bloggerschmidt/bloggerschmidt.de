@@ -1,4 +1,4 @@
-= Blog Title 2
+= @font-face - Die sicherste Methode Webfonts zu nutzen
 
 :published_at: 2015-02-10
 :hp-tags: test
