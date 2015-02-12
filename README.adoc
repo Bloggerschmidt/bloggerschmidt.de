@@ -1,5 +1,5 @@
 = bloggerschmidt.github.io
 
-== Blog of Alexander Schmidt
+=== Blog of Alexander Schmidt
 
-Based on https://github.com/HubPress/hubpress.io[HubPress], created by http://github.com/anthonny[Anthonny Quérouil] 
+Based on https://github.com/HubPress/hubpress.io[HubPress]
