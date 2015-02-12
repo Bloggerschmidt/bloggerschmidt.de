@@ -6,7 +6,7 @@ Als Webentwickler erstellt man Formulare. Von der Wiege bis zur Bahre: Formulare
 
 ## Demo
 
-http://bloggerschmidt.github.io/demos/jquery/autocomplete-plz-ort/[Siehe jQuery Demo^, role="button"]
+http://bloggerschmidt.github.io/demos/jquery/autocomplete-plz-ort/[Siehe jQuery Demo]
 
 ## HTML inputs
 
