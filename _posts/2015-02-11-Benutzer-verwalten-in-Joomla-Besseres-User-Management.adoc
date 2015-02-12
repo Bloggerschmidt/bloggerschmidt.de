@@ -1,4 +1,4 @@
-# Second post
+# Benutzer verwalten in Joomla! - Besseres User-Management
 
 :published_at: 2015-02-11
 
