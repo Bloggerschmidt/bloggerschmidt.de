@@ -1,4 +1,4 @@
-# New try
+# Modul-Klassen-Suffix und Menü-Klassen-Suffix
 
 :published_at: 2015-02-11
 
