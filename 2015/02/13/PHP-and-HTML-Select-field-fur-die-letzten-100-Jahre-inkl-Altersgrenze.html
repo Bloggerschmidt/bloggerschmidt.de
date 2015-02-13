@@ -35,7 +35,7 @@
     <meta property="og:description" content="Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unterschiedliche Weise tun. Man kann ein einziges, freies Textfeld nutzen, in das der User sein Geburtstag eingibt. Das birgt jedoch die Gefahr der Vertippung. Besser ist da die Abfrage..." />
     <meta property="og:url" content="http://Bloggerschmidt.github.io/2015/02/13/PHP-and-HTML-Select-field-fur-die-letzten-100-Jahre-inkl-Altersgrenze.html" />
     <meta property="article:published_time" content="2015-02-12T23:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-13T07:29:25.153Z" />
+    <meta property="article:modified_time" content="2015-02-13T07:32:54.387Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="PHP &amp; HTML: Select field für die letzten 100 Jahre inkl. Altersgrenze" />
@@ -57,7 +57,7 @@
     "headline": "PHP &amp; HTML: Select field für die letzten 100 Jahre inkl. Altersgrenze",
     "url": "http://Bloggerschmidt.github.io/2015/02/13/PHP-and-HTML-Select-field-fur-die-letzten-100-Jahre-inkl-Altersgrenze.html",
     "datePublished": "2015-02-12T23:00:00.000Z",
-    "dateModified": "2015-02-13T07:29:25.153Z",
+    "dateModified": "2015-02-13T07:32:54.387Z",
     "description": "Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unterschiedliche Weise tun. Man kann ein einziges, freies Textfeld nutzen, in das der User sein Geburtstag eingibt. Das birgt jedoch die Gefahr der Vertippung. Besser ist da die Abfrage..."
 }
     </script>
@@ -188,12 +188,8 @@
       $limit = 18;
       $current = date('Y');
       $eldest = $current - $range;
-      $recent = $current - $limit;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>      foreach (range($recent, $eldest) as $year)
+      $recent = $current - $limit;
+      foreach (range($recent, $eldest) as $year)
       {
         echo "&lt;option value=\"".$year."\"&gt;".$year."&lt;/option&gt;";
       }
@@ -202,7 +198,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll.</p>
+<p>Okay, wir legen 100 Jahre fest ($range) und die Altersgrenze ($limit). Das jetzige Datum ($current) hilft uns das älteste Jahr ($eldest) und das jüngste Jahr ($recent) festzulegen. Danach geben wir in einer Schleife (foreach) Jahr für Jahr aus. So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll.</p>
 </div>
 </div>
 </div>
