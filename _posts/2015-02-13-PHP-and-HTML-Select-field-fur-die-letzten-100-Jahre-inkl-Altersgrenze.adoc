@@ -4,7 +4,7 @@ Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unte
 
 ## Demo
 
-http://bloggerschmidt.github.io/demos/php/select100years/[Siehe PHP &amp; HTML Demo]
+http://codepad.viper-7.com/2N76xF[Siehe PHP &amp; HTML Demo]
 
 ## Das Geburtsdatum
 
@@ -13,17 +13,17 @@ Der Geburtstag ist auswählbar zwischen 1-31, der Geburtsmonat zwischen 1-12 und
   <select>
     <option>Geburtsjahr</option>
       <?php
-        $range = 100;
+        $range = 100;  
         $limit = 18;
         $current = date('Y');
         $eldest = $current - $range;
         $recent = $current - $limit;
-
+			   
         foreach (range($recent, $eldest) as $year)
         {
           echo "<option value=\"".$year."\">".$year."</option>";
         }
-      ?>
+      ?>	 
   </select>
 
 So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll. 
