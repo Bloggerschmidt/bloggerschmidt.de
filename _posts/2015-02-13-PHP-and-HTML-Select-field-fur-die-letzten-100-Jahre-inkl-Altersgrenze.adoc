@@ -1,0 +1,29 @@
+# PHP & HTML: Select field für die letzten 100 Jahre inkl. Altersgrenze
+
+Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unterschiedliche Weise tun. Man kann ein einziges, freies Textfeld nutzen, in das der User sein Geburtstag eingibt. Das birgt jedoch die Gefahr der Vertippung. Besser ist da die Abfrage mittels Auswahlfeld (select). 
+
+## Demo
+
+http://www.edvas.de[Siehe PHP &amp; HTML Demo]
+
+## Das Geburtsdatum
+
+Der Geburtstag ist auswählbar zwischen 1-31, der Geburtsmonat zwischen 1-12 und das Geburtsjahr ... ja ... das Geburtsjahr. Es wäre doof hier eine Auswahl zwischen 2015-1915 fest zu hinterlegen. Besser ist es mithilfe PHP die Jahre zu ermitteln. Nach dem Schema: Von heute an die letzten 100 Jahre. Will man eine Altergrenze mit einbauen, hilft die Mathematik aus der Grundschule.
+
+  <select>
+    <option>Geburtsjahr</option>
+      <?php
+        $range = 100;
+        $limit = 18;
+        $current = date('Y');
+        $eldest = $current - $range;
+        $recent = $current - $limit;
+
+        foreach (range($recent, $eldest) as $year)
+        {
+          echo "<option value=\"".$year."\">".$year."</option>";
+        }
+      ?>
+  </select>
+
+So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll. 
