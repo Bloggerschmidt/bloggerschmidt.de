@@ -18,12 +18,11 @@ Der Geburtstag ist auswählbar zwischen 1-31, der Geburtsmonat zwischen 1-12 und
         $current = date('Y');
         $eldest = $current - $range;
         $recent = $current - $limit;
-			   
         foreach (range($recent, $eldest) as $year)
         {
           echo "<option value=\"".$year."\">".$year."</option>";
-        }
+        } 
       ?>	 
   </select>
 
-So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll. 
+Okay, wir legen 100 Jahre fest ($range) und die Altersgrenze ($limit). Das jetzige Datum ($current) hilft uns das älteste Jahr ($eldest) und das jüngste Jahr ($recent) festzulegen. Danach geben wir in einer Schleife (foreach) Jahr für Jahr aus. So geht man sicher, auch immer die letzten 100 Jahre auswählbar zu machen und man muss volljährig sein, wenn die Auswahl der Wahrheit entsprechen soll. 
