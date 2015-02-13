@@ -4,7 +4,7 @@ Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unte
 
 ## Demo
 
-http://www.edvas.de[Siehe PHP &amp; HTML Demo]
+http://bloggerschmidt.github.io/demos/php/select100years/[Siehe PHP &amp; HTML Demo]
 
 ## Das Geburtsdatum
 
