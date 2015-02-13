@@ -98,7 +98,7 @@
 				</form>
 				
 				<p>(Siehe Quelltext zur Implementierung)</p>
-				<p><a href="http://bloggerschmidt.github.io/2015/02/11/jQuery-Autovervollstandigung-von-Ort-bzw-Stadt-anhand-der-Postleitzahl.html" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Zur&uuml;ck zum Beitrag</a></p>
+				<p><a href="http://bloggerschmidt.github.io/2015/02/13/PHP-and-HTML-Select-field-fur-die-letzten-100-Jahre-inkl-Altersgrenze.html" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span> Zur&uuml;ck zum Beitrag</a></p>
 
 			</div>
 		</div>
