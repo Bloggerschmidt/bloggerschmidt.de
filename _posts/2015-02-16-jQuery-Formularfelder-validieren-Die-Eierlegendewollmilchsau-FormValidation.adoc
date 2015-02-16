@@ -2,13 +2,15 @@
 
 :published_at: 2015-02-16
 
+image::https://raw.githubusercontent.com/Bloggerschmidt/Bloggerschmidt.github.io/gh-pages/images/formvalidation.png[]
+
 Auf der Suche nach einer guten Validierung für HTML-Formulare stolperte ich per Zufall über das http://jquery.com/[jQuery]-Plugin http://formvalidation.io/[FormValidation]. Es war Liebe auf den ersten Blick. Die Validatoren lassen kein Feld aus und der Support der Frameworks ist geglückt. Zwar ist das Plugin kostenpflichtig, doch in allen Fällen jeden Pfennig wert. 
 
-# Projektseite
+## Projektseite
 
 Das Projekt findest Du unter http://formvalidation.io/[formvalidation.io] und unter https://github.com/formvalidation/formvalidation[GitHub im Repository formvalidation].
 
-# 5 Frameworks
+## 5 Frameworks
 
 Folgende Frameworks werden unterstützt:
 
@@ -18,12 +20,11 @@ Folgende Frameworks werden unterstützt:
 - http://semantic-ui.com/[Semantic UI]
 - http://getuikit.com/[UIKit]
 
-
-# 50 Validatoren
+## 50 Validatoren
 
 Der Clou von FormValidation sind seine über http://formvalidation.io/validators/[50 Validatoren]. Sei es Kreditkarten, IBANs, Postleitzahlen, ein einzelnes Datum oder viele Dateien: Jede Eingabe in ein Formularfeld lässt sich auf Richtigkeit prüfen. http://formvalidation.io/examples/[Die Fülle der Beispiele] verdeutlich sehr gut die Vorgehensweise bei der Implementierung.
 
-# 38 Sprachen
+## 38 Sprachen
 
 Neben Deutsch unterstützt FormValidation http://formvalidation.io/getting-started/#language-packages[38 Sprachen], die mittels einer einzigen JavaScript-Datei implementiert werden, z. B. de_DE.js.
 
@@ -32,7 +33,7 @@ Neben Deutsch unterstützt FormValidation http://formvalidation.io/getting-start
 <script type="text/javascript" src="/vendor/formvalidation/dist/js/language/de_DE.js"></script>
 ----
 
-# Erste Schritte
+## Erste Schritte
 
 FormValidation benötigt http://jquery.com/[jQuery] ab Version 1.9.1. Für das Einbinden sucht man sich sein Lieblings-Framework aus (Bootstrap, Foundation, etc.). Die Pfade zu den Dateien müssen individuell angepasst werden.
 
@@ -59,7 +60,7 @@ FormValidation benötigt http://jquery.com/[jQuery] ab Version 1.9.1. Für das E
 
 Weiter Infos siehe http://formvalidation.io/getting-started/#including-library[Including Library].
 
-# Programm-Code
+## Programm-Code
 
 Ist FormValidation implemetiert, ist es recht einfach eine Validierung für ein feld zur erstellen. Folgender Code soll es verdeutlichen:
 
@@ -90,10 +91,10 @@ $(document).ready(function() {
 
 Man sucht sich das Formular anhand der ID und gibt an, welches Framework (und welche Icons) genutzt werden. Danach können die Regelen für die jeweiligen Felder anhand der Validatoren festgelegt werden und die Nachricht, im Falle einer Fehleingabe.
 
-# Kosten und Lizenz
+## Kosten und Lizenz
 
 Für 25,- $ Dollar (knapp 22,- EUR) bekommst Du als einzelner Entwickler ein Lifetime-Upgrade. Du kannst das jQuery-Plugin für mehrere Websites nutzen. Zudem ist der komplette Source-Code öffentlich, was die Entwicklung eigener Erweiterungen, bzw. eigener Validatoren, ermöglicht. Einmal zahlen und für immer profitieren ist schon verlockend.
 
-# Fazit
+## Fazit
 
 Obwohl ich als Autor die Entwickler nicht kenne und ich nicht dazu veranlasst wurde darüber zu schreiben, kann ich das jQuery-Plugin FormValidation nur wärmstens empfehlen. Die Fülle an Validatoren und unterstützen Frameworks, sowie die einfache Implementierung und Aufstellung der Regeln sucht seines Gleichen. Für knapp 22,- EUR ist es eine sehr gute und günstige Investition, wenn man vergleicht, welche Gegenleistung man dafür erhält.
