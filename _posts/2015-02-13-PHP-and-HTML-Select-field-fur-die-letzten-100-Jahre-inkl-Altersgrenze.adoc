@@ -1,5 +1,7 @@
 # PHP & HTML: Select field für die letzten 100 Jahre inkl. Altersgrenze
 
+:published_at: 2015-02-13
+
 Will man das Geburtsdatum mittels HTML-Formular abfragen, kann man dies auf unterschiedliche Weise tun. Man kann ein einziges, freies Textfeld nutzen, in das der User sein Geburtstag eingibt. Das birgt jedoch die Gefahr der Vertippung. Besser ist da die Abfrage mittels Auswahlfeld (select). 
 
 ## Demo
