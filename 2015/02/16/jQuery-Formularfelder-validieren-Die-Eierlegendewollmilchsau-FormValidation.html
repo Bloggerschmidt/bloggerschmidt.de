@@ -36,7 +36,7 @@
     <meta property="og:description" content="Auf der Suche nach einer guten Validierung für HTML-Formulare stolperte ich per Zufall über das jQuery-Plugin FormValidation. Es war Liebe auf den ersten Blick. Die Validatoren lassen kein Feld aus und der Support der Frameworks ist geglückt. Zwar ist das..." />
     <meta property="og:url" content="http://bloggerschmidt.de/2015/02/16/jQuery-Formularfelder-validieren-Die-Eierlegendewollmilchsau-FormValidation.html" />
     <meta property="article:published_time" content="2015-02-15T23:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-02-16T13:59:50.597Z" />
+    <meta property="article:modified_time" content="2015-02-16T14:06:39.027Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="jQuery Formularfelder validieren: Die Eierlegendewollmilchsau FormValidation" />
@@ -58,7 +58,7 @@
     "headline": "jQuery Formularfelder validieren: Die Eierlegendewollmilchsau FormValidation",
     "url": "http://bloggerschmidt.de/2015/02/16/jQuery-Formularfelder-validieren-Die-Eierlegendewollmilchsau-FormValidation.html",
     "datePublished": "2015-02-15T23:00:00.000Z",
-    "dateModified": "2015-02-16T13:59:50.597Z",
+    "dateModified": "2015-02-16T14:06:39.027Z",
     "description": "Auf der Suche nach einer guten Validierung für HTML-Formulare stolperte ich per Zufall über das jQuery-Plugin FormValidation. Es war Liebe auf den ersten Blick. Die Validatoren lassen kein Feld aus und der Support der Frameworks ist geglückt. Zwar ist das..."
 }
     </script>
@@ -201,44 +201,32 @@
 <div class="paragraph">
 <p>Neben Deutsch unterstützt FormValidation <a href="http://formvalidation.io/getting-started/#language-packages">38 Sprachen</a>, die mittels einer einzigen JavaScript-Datei implementiert werden, z. B. de_DE.js.</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>&lt;script type="text/javascript" src="/vendor/formvalidation/dist/js/language/de_DE.js"&gt;&lt;/script&gt;</pre>
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;script type="text/javascript" src="/vendor/formvalidation/dist/js/language/de_DE.js"&gt;&lt;/script&gt;</code></pre>
 </div>
 </div>
 <h1 id="_erste_schritte" class="sect0">Erste Schritte</h1>
 <div class="paragraph">
 <p>FormValidation benötigt <a href="http://jquery.com/">jQuery</a> ab Version 1.9.1. Für das Einbinden sucht man sich sein Lieblings-Framework aus (Bootstrap, Foundation, etc.). Die Pfade zu den Dateien müssen individuell angepasst werden.</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>&lt;!-- Bootstrap CSS v3.0.0 or higher --&gt;
-&lt;link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css"&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>&lt;!-- FormValidation CSS file --&gt;
-&lt;link rel="stylesheet" href="/vendor/formvalidation/dist/css/formValidation.min.css"&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>&lt;!-- jQuery v1.9.1 or higher --&gt;
-&lt;script type="text/javascript" src="/vendor/jquery/jquery.min.js"&gt;&lt;/script&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>&lt;!-- Bootstrap JS --&gt;
-&lt;script src="/vendor/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>&lt;!-- FormValidation plugin and the class supports validating Bootstrap form --&gt;
+<pre class="highlight"><code class="language-html" data-lang="html">&lt;!-- Bootstrap CSS v3.0.0 or higher --&gt;
+&lt;link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css"&gt;
+
+&lt;!-- FormValidation CSS file --&gt;
+&lt;link rel="stylesheet" href="/vendor/formvalidation/dist/css/formValidation.min.css"&gt;
+
+&lt;!-- jQuery v1.9.1 or higher --&gt;
+&lt;script type="text/javascript" src="/vendor/jquery/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src="/vendor/bootstrap/js/bootstrap.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- FormValidation plugin and the class supports validating Bootstrap form --&gt;
 &lt;script src="/vendor/formvalidation/dist/js/formValidation.min.js"&gt;&lt;/script&gt;
-&lt;script src="/vendor/formvalidation/dist/js/framework/bootstrap.min.js"&gt;&lt;/script&gt;</pre>
+&lt;script src="/vendor/formvalidation/dist/js/framework/bootstrap.min.js"&gt;&lt;/script&gt;</code></pre>
 </div>
 </div>
 <div class="quoteblock">
@@ -255,9 +243,9 @@
 <div class="paragraph">
 <p>Ist FormValidation implemetiert, ist es recht einfach eine Validierung für ein feld zur erstellen. Folgender Code soll es verdeutlichen:</p>
 </div>
-<div class="literalblock">
+<div class="listingblock">
 <div class="content">
-<pre>&lt;script&gt;
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">&lt;script&gt;
 $(document).ready(function() {
     $('#productForm').formValidation({
         framework: 'bootstrap',
@@ -277,7 +265,7 @@ $(document).ready(function() {
         }
     });
 });
-&lt;/script&gt;</pre>
+&lt;/script&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
