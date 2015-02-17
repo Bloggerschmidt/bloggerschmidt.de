@@ -38,11 +38,11 @@ Die Suffixe sind rot dargestellt. Im Cascading Stylesheet haben wir jetzt die MÃ
 ----
 div.module_menu {
 	background: blue;
-  ...
+	...
 }
 ul.menu_main {
-  list-style: none;
-  ...
+	list-style: none;
+	...
 }
 ----
 
