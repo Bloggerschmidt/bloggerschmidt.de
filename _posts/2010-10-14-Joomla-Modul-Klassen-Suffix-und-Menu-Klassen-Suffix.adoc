@@ -30,7 +30,7 @@ image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pag
 
 Als Beispiel öffnen wir das Hauptmenü unter Erweiterungen &gt; Module und vergeben den Menü-Klassen-Suffix `_main` und den Modul-Klassen-Suffix `_menu`. Speichern wir das Modul ab, sieht unser Quelltext im Frontend z. B. so aus:
 
-image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung.png[]
+image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/quelltext.png[]
 
 Die Suffixe sind rot dargestellt. Im Cascading Stylesheet haben wir jetzt die Möglichkeit anhand der neuen Klassen `.module_menu` und `.menu_main` das Hauptmenü zu gestalten.
 
