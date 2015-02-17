@@ -34,7 +34,7 @@ image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pag
 
 Die Suffixe sind rot dargestellt. Im Cascading Stylesheet haben wir jetzt die Möglichkeit anhand der neuen Klassen `.module_menu` und `.menu_main` das Hauptmenü zu gestalten.
 
-
+[source,css]
 ----
 div.module_menu {
 	background: blue;
