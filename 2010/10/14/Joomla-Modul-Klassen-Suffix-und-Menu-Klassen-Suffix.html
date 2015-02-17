@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix - Bloggerschmidt</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://bloggerschmidt.de/themes/uno/assets/css/uno.css?v=1.0.0" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://bloggerschmidt.de/themes/uno/assets/images/favicon.ico?v=1.0.0" />
+    
+    <link rel="canonical" href="http://bloggerschmidt.de/2010/10/14/Joomla-Modul-Klassen-Suffix-und-Menu-Klassen-Suffix.html" />
+    
+    <meta property="og:site_name" content="Bloggerschmidt" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix" />
+    <meta property="og:description" content="Jeder, der sich n&amp;auml;her mit Joomla! befasst, stolpert irgendwann &amp;uuml;ber die zwei Suffixe Modul-Klassen-Suffix und Men&amp;uuml;-Klassen-Suffix. Doch was ist &amp;uuml;berhaupt ein Suffix und wie kann ich die beiden anwenden? Ein kurzer Einblick in die..." />
+    <meta property="og:url" content="http://bloggerschmidt.de/2010/10/14/Joomla-Modul-Klassen-Suffix-und-Menu-Klassen-Suffix.html" />
+    <meta property="article:published_time" content="2010-10-13T22:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-02-17T07:55:10.732Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix" />
+    <meta name="twitter:description" content="Jeder, der sich n&amp;auml;her mit Joomla! befasst, stolpert irgendwann &amp;uuml;ber die zwei Suffixe Modul-Klassen-Suffix und Men&amp;uuml;-Klassen-Suffix. Doch was ist &amp;uuml;berhaupt ein Suffix und wie kann ich die beiden anwenden? Ein kurzer Einblick in die..." />
+    <meta name="twitter:url" content="http://bloggerschmidt.de/2010/10/14/Joomla-Modul-Klassen-Suffix-und-Menu-Klassen-Suffix.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Bloggerschmidt",
+    "author": {
+        "@type": "Person",
+        "name": "Alexander Schmidt",
+        "image": "https://avatars.githubusercontent.com/u/1226135?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://bloggerschmidt.de"
+    },
+    "headline": "Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix",
+    "url": "http://bloggerschmidt.de/2010/10/14/Joomla-Modul-Klassen-Suffix-und-Menu-Klassen-Suffix.html",
+    "datePublished": "2010-10-13T22:00:00.000Z",
+    "dateModified": "2015-02-17T07:55:10.732Z",
+    "description": "Jeder, der sich n&amp;auml;her mit Joomla! befasst, stolpert irgendwann &amp;uuml;ber die zwei Suffixe Modul-Klassen-Suffix und Men&amp;uuml;-Klassen-Suffix. Doch was ist &amp;uuml;berhaupt ein Suffix und wie kann ich die beiden anwenden? Ein kurzer Einblick in die..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Bloggerschmidt" href="http://bloggerschmidt.de/rss" />
+
+</head>
+<body class="post-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://bloggerschmidt.de" title="Startseite von Bloggerschmidt"><img src="https://avatars1.githubusercontent.com/u/1226135?v=3" width="80" alt="Bloggerschmidt logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://bloggerschmidt.de" title="Startseite von Bloggerschmidt">Bloggerschmidt</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Hier schreibt Alexander Schmidt, Webentwickler und CSS Guru</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="Blog von Bloggerschmidt" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="https://twitter.com/Bloggerschmidt" title="Twitter Account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/Bloggerschmidt" title="Github Account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+                  </li>
+              
+              
+              
+              
+              
+                  <!-- Email -->
+                  <li class="navigation__item">
+                    <a href="mailto:mail@bloggerschmidt.de" title="E-Mail mail@bloggerschmidt.de">
+                      <i class='icon icon-mail'></i>
+                      <span class="label">E-Mail</span>
+                    </a>
+                  </li>
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="14.10.2010" class="post-meta__date date">14.10.2010</time> &#8226; <span class="post-meta__tags tags"></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/1226135?v=3" alt="Profilbild von Alexander Schmidt" class="avatar post-meta__avatar" /> von Alexander Schmidt</span>
+      </div>
+      <h1 class="post-title">Joomla: Modul-Klassen-Suffix und Menü-Klassen-Suffix</h1>
+    </header>
+
+    <section class="post">
+      <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jeder, der sich n&auml;her mit Joomla! befasst, stolpert irgendwann &uuml;ber die zwei Suffixe <strong>Modul-Klassen-Suffix</strong> und <strong>Men&uuml;-Klassen-Suffix</strong>. Doch was ist &uuml;berhaupt ein Suffix und wie kann ich die beiden anwenden? Ein kurzer Einblick in die Tiefen der Template-Gestaltung in Joomla!.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modul_klassen_suffix">Modul-Klassen-Suffix</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Der Modul-Klassen-Suffix wird an die CSS-Klasse des Moduls angehängt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung.png" alt="begriffserklaerung.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Heißt die Modulklasse z. B. <code>.module</code> und der Modul-Klassen-Suffix <code>_menu</code>, kann im Cascading Stylesheet mit der Klasse <code>.module_menu</code> das Modul gestaltet werden.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_men_klassen_suffix">Menü-Klassen-Suffix</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Der Menü-Klassen-Suffix wird an die CSS-Klasse des Menüs angehängt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung2.png" alt="begriffserklaerung2.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Heißt die Menüklasse z. B. .menu und der Modul-Klassen-Suffix _main, kann im Cascading Stylesheet mit der Klasse .menu_main das Modul gestaltet werden.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_suffixe_vergeben">Suffixe vergeben</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Suffixe werden in den Modulen vergeben. Öffnet man im Joomla-Backend unter Erweiterungen &gt; Module ein Modul, kann man unter Erweiterte Parameter den Modul-Klassen-Suffix vergeben. Gehört das Modul zu einem Menü, ist zusätzlich ein Menü-Klassen-Suffix vergebbar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/erweiterte-parameter.png" alt="erweiterte parameter.png">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_beispiel_hauptmen">Beispiel Hauptmenü</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Als Beispiel öffnen wir das Hauptmenü unter Erweiterungen &gt; Module und vergeben den Menü-Klassen-Suffix <code>_main</code> und den Modul-Klassen-Suffix <code>_menu</code>. Speichern wir das Modul ab, sieht unser Quelltext im Frontend z. B. so aus:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/quelltext.png" alt="quelltext.png">
+</div>
+</div>
+<div class="paragraph">
+<p>Die Suffixe sind rot dargestellt. Im Cascading Stylesheet haben wir jetzt die Möglichkeit anhand der neuen Klassen <code>.module_menu</code> und <code>.menu_main</code> das Hauptmenü zu gestalten.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">div.module_menu {
+	background: blue;
+	...
+}
+ul.menu_main {
+	list-style: none;
+	...
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_zus_tzliche_klassen">Zusätzliche Klassen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die Eingabefelder für die Suffixe eignen sich auch um zusätzliche Klassen zu definieren. Schreibt man einen Suffix mit einem führenden Leerzeichen, wird es als zusätzliche Klasse betrachtet. So kann man z. B. die zwei Klassen <code>module menu</code> erzeugen anstatt nur eine <code>module_menu</code>. CSS-Definitionen für <code>.module</code> bleiben damit erhalten und weitere können mit der neuen Klasse hinzugefügt werden.</p>
+</div>
+<div class="paragraph">
+<p>Mit dieser Methode kann man beliebig viele Klassen definieren. Wichtig ist dabei das Leerzeichen zwischen den Klassen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fazit">Fazit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Durch die Suffixe kann der Webdesigner eigene CSS-Klassen definieren und ist damit freier in seiner Gestaltung. Gerade wenn mehrere Module und/oder Menüs zum Einsatz kommen, sind <strong>Modul-Klassen-Suffix</strong> und <strong>Menü-Klassen-Suffix</strong> ein gutes Werkzeug schnell eigene Styles zu definieren.</p>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+  
+  <section class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'Bloggerschmidt'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </section>
+  
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. Alle Rechte vorbehalten.</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://bloggerschmidt.de/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://bloggerschmidt.de/themes/uno/assets/js/hyphens.js?v=1.0.0"></script>
+    <script type="text/javascript">
+    	Hyphenator.config({
+    	    defaultlanguage: 'de',
+    		classname : 'post-title',
+    		minwordlength : 4
+    	});
+    	Hyphenator.run();
+    </script>
+        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.rocks/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 18]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.rocks/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
+</body>
+</html>
