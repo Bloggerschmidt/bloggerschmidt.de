@@ -4,12 +4,11 @@
 
 Jeder, der sich n&auml;her mit Joomla! befasst, stolpert irgendwann &uuml;ber die zwei Suffixe **Modul-Klassen-Suffix** und **Men&uuml;-Klassen-Suffix**. Doch was ist &uuml;berhaupt ein Suffix und wie kann ich die beiden anwenden? Ein kurzer Einblick in die Tiefen der Template-Gestaltung in Joomla!.
 
-
 ## Modul-Klassen-Suffix
 
 Der Modul-Klassen-Suffix wird an die CSS-Klasse des Moduls angehängt.
 
-[BILD]
+image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung.png[]
 
 Heißt die Modulklasse z. B. `.module` und der Modul-Klassen-Suffix `_menu`, kann im Cascading Stylesheet mit der Klasse `.module_menu` das Modul gestaltet werden.
 
@@ -17,7 +16,7 @@ Heißt die Modulklasse z. B. `.module` und der Modul-Klassen-Suffix `_menu`, kan
 
 Der Menü-Klassen-Suffix wird an die CSS-Klasse des Menüs angehängt.
 
-[BILD]
+image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung2.png[]
 
 Heißt die Menüklasse z. B. .menu und der Modul-Klassen-Suffix _main, kann im Cascading Stylesheet mit der Klasse .menu_main das Modul gestaltet werden.
 
@@ -25,13 +24,13 @@ Heißt die Menüklasse z. B. .menu und der Modul-Klassen-Suffix _main, kann im C
 
 Die Suffixe werden in den Modulen vergeben. Öffnet man im Joomla-Backend unter Erweiterungen > Module ein Modul, kann man unter Erweiterte Parameter den Modul-Klassen-Suffix vergeben. Gehört das Modul zu einem Menü, ist zusätzlich ein Menü-Klassen-Suffix vergebbar.
 
-[BILD]
+image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/erweiterte-parameter.png[]
 
 ## Beispiel Hauptmenü
 
 Als Beispiel öffnen wir das Hauptmenü unter Erweiterungen &gt; Module und vergeben den Menü-Klassen-Suffix `_main` und den Modul-Klassen-Suffix `_menu`. Speichern wir das Modul ab, sieht unser Quelltext im Frontend z. B. so aus:
 
-[BILD]
+image::https://raw.githubusercontent.com/Bloggerschmidt/bloggerschmidt.de/gh-pages/images/menuklassensuffix/begriffserklaerung.png[]
 
 Die Suffixe sind rot dargestellt. Im Cascading Stylesheet haben wir jetzt die Möglichkeit anhand der neuen Klassen `.module_menu` und `.menu_main` das Hauptmenü zu gestalten.
 
