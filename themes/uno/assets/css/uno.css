@@ -1690,3 +1690,10 @@ input[type="tel"] {
   .btn, .navigation__item a {
     display: block;
     margin-bottom: .4em; } }
+
+
+
+.banner {
+   max-width: 100%;
+   margin-bottom: 80px;
+}
