@@ -1697,3 +1697,9 @@ input[type="tel"] {
    max-width: 100%;
    margin-bottom: 80px;
 }
+
+.printfriendly {
+   float: right;
+   font-size: 0.8em;
+   color: #C7C7C7;
+}
