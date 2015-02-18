@@ -1,6 +1,7 @@
 # Freie HTML E-Mail Layouts für responsive, geräteunabhängige Newsletter
 
 :published_at: 2015-02-18
+:hp-tags: HTML
 
 image::https://raw.githubusercontent.com/Bloggerschmidt/Bloggerschmidt.github.io/gh-pages/images/emailblueprints.png[]
 
