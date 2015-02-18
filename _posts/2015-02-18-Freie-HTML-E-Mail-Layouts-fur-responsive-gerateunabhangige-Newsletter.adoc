@@ -2,6 +2,8 @@
 
 :published_at: 2015-02-18
 
+image::https://raw.githubusercontent.com/Bloggerschmidt/Bloggerschmidt.github.io/gh-pages/images/emailblueprints.png[]
+
 Ein Newsletter erstellst Du heutzutage mit der Webtechnik von 1999. Kein Witz. Durch die unterschiedlichen Webclients, wie Thunderbird, Mail oder Outlook, und deren verschiedenen Methoden das HTML zu rendern, muss Du auf Workarrounds zurückgreifen, von denen man eigentlich dachte, sie seien 2005 ausgestorben. Doch was gilt es beim Erstellen eines Newsletters zu beachten und wie stellst Du ihn geräteunabhängig dar?
 
 ## Erste Schritte
