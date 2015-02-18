@@ -1701,5 +1701,5 @@ input[type="tel"] {
 .printfriendly {
    float: right;
    font-size: 0.8em;
-   color: #C7C7C7;
+   color: #C7C7C7 !important;
 }
