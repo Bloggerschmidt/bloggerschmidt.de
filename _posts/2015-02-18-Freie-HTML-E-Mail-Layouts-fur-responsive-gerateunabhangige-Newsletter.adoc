@@ -1,0 +1,20 @@
+# Freie HTML E-Mail Layouts für responsive, geräteunabhängige Newsletter
+
+:published_at: 2015-02-18
+
+Ein Newsletter erstellst Du heutzutage mit der Webtechnik von 1999. Kein Witz. Durch die unterschiedlichen Webclients, wie Thunderbird, Mail oder Outlook, und deren verschiedenen Methoden das HTML zu rendern, muss Du auf Workarrounds zurückgreifen, von denen man eigentlich dachte, sie seien 2005 ausgestorben. Doch was gilt es beim Erstellen eines Newsletters zu beachten und wie stellst Du ihn geräteunabhängig dar?
+
+## Erste Schritte
+
+Um eine HTML-E-Mail zu kodieren brauchst Du Tabellen, Tabellen, Tabellen. So, wie manche von uns ihre ersten Websites erstellt haben mögen. Dabei sind die Anforderungen von heute noch immer aktuell. Geräteunabhängigkeit und Ausrichtung spielen eine große Rolle. 
+
+## E-Mail Blueprints
+
+Mailchimp, ein Online-Dienst, der sich auf das Versenden von Newsletter spezialisiert hat, stellt seine E-Mail Blueprints unter GitHub frei zur Verfügung. Damit bekommst Du eine Menge praxistaugliche Vorlagen für den eigenen Newsletter. Neben den responsiven Templates sind in den Blueprints auch modulare Patterns enthalten, mit den üblich gebräuchlichen Design-Elementen.
+
+https://github.com/mailchimp/email-blueprints/archive/master.zip[Download ZIP]
+
+## Inline-CSS
+
+Eine E-Mail-Clients ignorieren oder löschen gar die <head> und <style> Tags aus den E-Mails, so dass es für Dich am besten ist Inline-CSS zu schreiben. Klar, Inline-CSS ist nicht gerade die feine Art des Kodieren und auch recht zeitintensiv. Dafür stellt Mailchimp ein weiteres Tool online zur Verfügung: http://templates.mailchimp.com/resources/inline-css/[CSS Inliner Tool]. Dort kannst Du Dein HTML einfügen und bekommst eine E-Mail-freundliche Version davon heraus.
+
