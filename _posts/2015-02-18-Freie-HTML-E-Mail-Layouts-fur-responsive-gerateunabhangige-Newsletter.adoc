@@ -14,7 +14,8 @@ Um eine HTML-E-Mail zu kodieren brauchst Du Tabellen, Tabellen, Tabellen. So, wi
 
 http://mailchimp.com/[Mailchimp], ein Online-Dienst, der sich auf das Versenden von Newsletter spezialisiert hat, stellt seine https://github.com/mailchimp/email-blueprints[E-Mail Blueprints unter GitHub] frei zur Verfügung. Damit bekommst Du eine Menge praxistaugliche Vorlagen für den eigenen Newsletter. Neben den responsiven Templates sind in den Blueprints auch modulare Patterns enthalten mit den üblich gebräuchlichen Design-Elementen.
 
-https://github.com/mailchimp/email-blueprints/archive/master.zip[Download ZIP]
+https://github.com/mailchimp/email-blueprints/archive/master.zip[Download ZIP, class="button"]
+
 
 ## Inline-CSS
 
