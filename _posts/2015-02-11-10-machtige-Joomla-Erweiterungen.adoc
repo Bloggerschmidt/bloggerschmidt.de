@@ -22,7 +22,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ## 9. JCE 
 
-## 10. Akeeba Subscriptions
+## 10. Sourcerer
 
 ## Blank
 
