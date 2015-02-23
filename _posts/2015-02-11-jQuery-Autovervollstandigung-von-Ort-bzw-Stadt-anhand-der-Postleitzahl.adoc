@@ -19,7 +19,7 @@ Ausgangspunkt sind zwei input-Felder in HTML
 
 Folgendes jQuery nutzt den Dienst von http://www.geonames.org, läuft aber bedauerlicherweise nicht unter SSL (sprich: https).
 
-  $('#plz').keyup(function() {
+  $('#plz').bind('keyup change', function(e) {
       if ($(this).val().length > 4) {
           var ort = $('#ort');
           $.getJSON('http://www.geonames.org/postalCodeLookupJSON?&country=DE&callback=?', {postalcode: this.value }, function(response) {
@@ -34,6 +34,6 @@ Folgendes jQuery nutzt den Dienst von http://www.geonames.org, läuft aber bedau
   
 ## Erklärung
 
-Dieses jQuery sucht nach der id #plz, um es mit einer Funktion in Verbindung zu bringen, die ausgeführt wird, sobald eine Tasteneingabe (keyup) im input stattfindet. Dabei wartet es ab, bis mehr als 4 Zeichen eingegeben sind. Ist das der Fall, nimmt es den Wert und schaut bei geonames.org nach dem passenden Ort nach, um ihn dann als Wert dem Element #ort zu übergeben. Ansonten (else): Wird die Eingabe der PLZ wieder gelöscht, wird der Wert des Ortes auch wieder zurückgenommen.
+Dieses jQuery sucht nach der id #plz, um es mit einer Funktion in Verbindung zu bringen, die ausgeführt wird, sobald eine Tasteneingabe (keyup) im input stattfindet oder eine Autovervollständigung über den Browser (change). Dabei wartet es ab, bis mehr als 4 Zeichen eingegeben sind. Ist das der Fall, nimmt es den Wert und schaut bei geonames.org nach dem passenden Ort nach, um ihn dann als Wert dem Element #ort zu übergeben. Ansonten (else): Wird die Eingabe der PLZ wieder gelöscht, wird der Wert des Ortes auch wieder zurückgenommen.
 
 Will man nicht auf SSL verzichten, kommt man nicht drum herum die eigene Funktion zu skripten. Hilfreich ist hierbei http://download.geonames.org/export/zip/[die Tabelle der PLZ als Download].
