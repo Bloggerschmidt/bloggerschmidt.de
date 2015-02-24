@@ -2,4 +2,32 @@
 
 :published_at: 2015-02-24
 
+Das Joomla!-Projekt wird dieses Jahr 10 Jahre alt - und von Beginn an wurde das CMS ausschließlich von ehrenamtlichen Community-Mitgliedern entwickelt, die alle gemeinsam am selben Strang ziehen, um Joomla weiterzuentwickeln. Es gibt jedoch einen sehr elementaren Bereich, in dem das Joomla-Projekt akute Unterstützung benötigt: das Bug-Squad Team. Dieses Team, kümmert sich darum:
+
+- in Joomla gefundene Fehler (im englischen "Bugs" genannt) zu melden
+- für die gemeldeten Fehler eine Fehlerbehebung, Patch genannt, zu schreiben
+- diese Patches zu testen
+- und den getesteten Patch in den Joomla-Kern einzubauen
+
+Insbesondere der dritte Schritt, das Testen von Fehlerbehebungen, stellt aktuell einen Flaschenhals im Projekt dar. **Weit über 100 Fehlerbehebungen** können derzeit nicht in den Joomla-Kern einfließen, weil sich nicht genügend Freiwillige finden, die ein paar Minuten Zeit investieren und ausprobieren, ob der Patch funktioniert.
+
+Um diese Situation zu verbessern, findet am **14.03.15 von 10:00 bis 17:00 Uhr das erste deutschsprachige "Pizza, Bugs and Fun"-Event** statt. An diesem Tag möchten wir (der deutsche Joomla Verein) alle Joomla-begeisterten Nutzer, gleich mit welchem Vorkenntnissen, dazu einladen
+
+- zu lernen wie der Prozess der Fehlerbehebung bei Joomla funktioniert
+- zu lernen, wie man eine Fehlerbehebung testen kann
+- und dann zusammen an diesem Tag so viele Patches wie möglich zu testen
+
+Wir möchten also eine Einführung geben, die Angst nehmen und an diesem Tag einen zählbaren Beitrag zum Joomla-Core erbringen.
+
+Dafür wird es in ganz Deutschland, der Schweiz und Österreich lokale Treffen geben, die von den jeweiligen Joomla! Usergroups - in FFM also logischerweise von uns - ausgerichtet werden. Das einzige, was ihr mitbringen müsst, ist ein wenig Zeit, Neugier und einen Computer, um tatsächlich auch tätig werden zu können!
+
+Solltet ihr mitmachen wollen, so **meldet euch bitte hier an** (siehe unten) - diese Angabe ist nötig, damit wir die Verpflegung für den Tag (dank zweier Sponsoren gibt es eine Runde Pizza und Getränke für alle Teilnehmer) planen können.
+
+Treffpunkt wird NICHT im Goldstein sein, stattdessen hat sich Firma Hoesch & Partner GmbH dazu bereit erklärt, uns einen Konfi zur Verfügung zu stellen. Treffpunkt ist daher am 14.03.15, 10:00 Uhr hier:
+
+Hoesch & Partner GmbH
+Zentrale Frankfurt
+Rüsterstraße 1
+60325 Frankfurt
+
 +++<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=15888509961&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/joomla-pizza-bugs-and-fun-frankfurt-tickets-15888509961?ref=etckt">Joomla! Pizza, Bugs and Fun Frankfurt</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>+++
