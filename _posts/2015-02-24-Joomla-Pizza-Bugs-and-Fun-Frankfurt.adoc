@@ -30,6 +30,8 @@ Zentrale Frankfurt +
 Rüsterstraße 1 +
 60325 Frankfurt
 
+https://conference.hoesch-partner.de/ueber-uns/anfahrt[Anfahrt]
+
 https://conference.hoesch-partner.de/location/konferenzraum[Weitere Infos / Konferenzraum]
 
 +++<div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=15888509961&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online event registration</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/joomla-pizza-bugs-and-fun-frankfurt-tickets-15888509961?ref=etckt">Joomla! Pizza, Bugs and Fun Frankfurt</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>+++
