@@ -1,6 +1,6 @@
 # HubPress: Das eigene, kostenfreie Blog über GitHub
 
-:published_at: 2015-02-17
+:published_at: 2015-02-26
 
 Wer sein eigenes Blog betreiben will, kann das mit **HubPress** und einem freien GitHub-Account in wenigen Schritten selbst aufstellen. Was ein Blog ist weiß jeder. Doch was genau ist HubPress und wie verhält es sich mit dem Service GitHub? Dieser Artikel erklärt, wie das eigene Blog unter eigener Domain betrieben wird und was man dabei beachten sollte.
 
