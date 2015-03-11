@@ -109,8 +109,6 @@ Mit ein bißchen CSS sieht die index.html der Demo wie folgt aus
 <body>
 
 	<input class="datepicker birthday" type="text" placeholder="Geburtstag" />
-	<br /><br />
-	<input class="datepicker firstday" type="text" placeholder="Versicherungsbeginn" />
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/picker.js"></script>
@@ -123,13 +121,6 @@ Mit ein bißchen CSS sieht die index.html der Demo wie folgt aus
 			selectMonths: true,
 			selectYears: 100,
 			max: true
-		});
-
-		// Versicherungsbeginn
-		$('.firstday').pickadate({
-			selectMonths: true,
-			selectYears: 2,
-			min: true
 		});
 	</script>
 
