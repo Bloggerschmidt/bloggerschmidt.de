@@ -82,6 +82,17 @@ Mit dieser ID schreiben wir unser CSS.
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	#rotator thead {
+		display: block;
+		float: left;
+	}
+	#rotator tbody {
+		display: block;
+		width: auto;
+		position: relative;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
 	#rotator th, 
 	#rotator td {
 		margin: 0;
@@ -106,20 +117,10 @@ Mit dieser ID schreiben wir unser CSS.
 		border-right: 0;
 		border-bottom: 0;
 	}
-	#rotator thead {
-		display: block;
-		float: left;
-	}
 	#rotator thead tr {
 		display: block;
 	}
-	#rotator tbody {
-		display: block;
-		width: auto;
-		position: relative;
-		overflow-x: auto;
-		white-space: nowrap;
-	}
+	
 	#rotator tbody tr {
 		display: inline-block;
 		vertical-align: top;
