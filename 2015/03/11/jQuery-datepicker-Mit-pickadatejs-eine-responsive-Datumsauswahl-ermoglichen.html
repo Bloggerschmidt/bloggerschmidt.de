@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen - Bloggerschmidt</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen">
+    <meta property="og:description" content="">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" type="text/css" href="http://bloggerschmidt.de/themes/uno/assets/css/uno.css?v=1.0.0" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://bloggerschmidt.de/themes/uno/assets/images/favicon.ico?v=1.0.0" />
+    
+    <link rel="canonical" href="http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html" />
+    
+    <meta property="og:site_name" content="Bloggerschmidt" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen" />
+    <meta property="og:description" content="Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht pickadate.js bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist..." />
+    <meta property="og:url" content="http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html" />
+    <meta property="article:published_time" content="2015-03-10T23:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-03-11T07:18:54.467Z" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen" />
+    <meta name="twitter:description" content="Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht pickadate.js bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist..." />
+    <meta name="twitter:url" content="http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Bloggerschmidt",
+    "author": {
+        "@type": "Person",
+        "name": "Alexander Schmidt",
+        "image": "https://avatars.githubusercontent.com/u/1226135?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "http://bloggerschmidt.de"
+    },
+    "headline": "jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen",
+    "url": "http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html",
+    "datePublished": "2015-03-10T23:00:00.000Z",
+    "dateModified": "2015-03-11T07:18:54.467Z",
+    "description": "Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht pickadate.js bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Bloggerschmidt" href="http://bloggerschmidt.de/rss" />
+
+</head>
+<body class="post-template no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed " >
+      <div class="panel-main">
+    
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+    
+            <a href="http://bloggerschmidt.de" title="Startseite von Bloggerschmidt"><img src="https://avatars1.githubusercontent.com/u/1226135?v=3" width="80" alt="Bloggerschmidt logo" class="panel-cover__logo logo" /></a>
+            <h1 class="panel-cover__title panel-title"><a href="http://bloggerschmidt.de" title="Startseite von Bloggerschmidt">Bloggerschmidt</a></h1>
+            <hr class="panel-cover__divider" />
+            <p class="panel-cover__description">Hier schreibt Alexander Schmidt, Webentwickler und CSS Guru</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+    
+            <div class="navigation-wrapper">
+    
+              <nav class="cover-navigation cover-navigation--primary">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="/#blog" title="Blog von Bloggerschmidt" class="blog-button">Blog</a></li>
+                </ul>
+              </nav>
+    
+              
+              
+              <nav class="cover-navigation navigation--social">
+                <ul class="navigation">
+              
+              
+                  <!-- Twitter -->
+                  <li class="navigation__item">
+                    <a href="https://twitter.com/Bloggerschmidt" title="Twitter Account">
+                      <i class='icon icon-social-twitter'></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>
+              
+              
+                  <!-- Github -->
+                  <li class="navigation__item">
+                    <a href="https://github.com/Bloggerschmidt" title="Github Account">
+                      <i class='icon icon-social-github'></i>
+                      <span class="label">Github</span>
+                    </a>
+                  </li>
+              
+              
+              
+              
+              
+                  <!-- Email -->
+                  <li class="navigation__item">
+                    <a href="mailto:mail@bloggerschmidt.de" title="E-Mail mail@bloggerschmidt.de">
+                      <i class='icon icon-mail'></i>
+                      <span class="label">E-Mail</span>
+                    </a>
+                  </li>
+              
+                </ul>
+              </nav>
+              
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="panel-cover--overlay"></div>
+      </div>
+    </header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <a href="http://jandbeyond.org" target="_blank" title="J and Beyond 2015 | An International Joomla! Conference - May 29 - 31, 2015, Prague, Czech Republic"><img class="banner" border="0" alt="J and Beyond 2015 | An International Joomla! Conference - May 29 - 31, 2015, Prague, Czech Republic" src="http://jandbeyond.org/images/2015_banner/JAB15-Banner-wide.png" /></a>
+            
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="11.03.2015" class="post-meta__date date">11.03.2015</time> &#8226; <span class="post-meta__tags tags"></span>
+        <span class="post-meta__author author"><img src="https://avatars.githubusercontent.com/u/1226135?v=3" alt="Profilbild von Alexander Schmidt" class="avatar post-meta__avatar" /> von Alexander Schmidt</span>
+        <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'left';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#C7C7C7;text-decoration:none;font-size:0.8em;" class="printfriendly" onclick="window.print();return false;" title="Drucken, PDF">Drucken, PDF</a>
+      </div>
+      <h1 class="post-title">jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen</h1>
+    </header>
+
+    <section class="post">
+      <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht <a href="http://amsul.ca/pickadate.js/">pickadate.js</a> bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist auch die deutsche anzutreffen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_demo">Demo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="http://bloggerschmidt.de/demos/jquery/pickadate/">Siehe jQuery pickadate.js Demo</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pickadate_js">pickadate.js</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die unter dem Pseudonym <a href="https://github.com/amsul">amsul</a> erstellte Erweiterung wird <a href="https://github.com/amsul/pickadate.js">unter GitHub</a> entwickelt. Neben dem <a href="http://amsul.ca/pickadate.js/date/">date picker</a> existiert auch ein <a href="http://amsul.ca/pickadate.js/time/">time picker</a> und um eigenen Funktionalitäten mit einzubauen, hilft <a href="http://amsul.ca/pickadate.js/api/">die Dokumentation der API</a> weiter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_features">Features</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Support für <a href="http://jquery.com/">jQuery ab 1.7</a></p>
+</li>
+<li>
+<p>Touch- und Tastatur-freundlich</p>
+</li>
+<li>
+<p>Browser-Suppport ab IE8+</p>
+</li>
+<li>
+<p>Übersetzungen für 44 Sprachen (auch deutsch)</p>
+</li>
+<li>
+<p>Folgt der <a href="https://en.bem.info/">BEM Klassennamensgebung</a></p>
+</li>
+<li>
+<p><a href="http://lesscss.org/">LESS</a> basierte Stylesheets</p>
+</li>
+<li>
+<p>Basiert auf dem <a href="http://gruntjs.com/">Grunt</a> Build System</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vorbereitung">Vorbereitung</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ist <a href="https://github.com/amsul/pickadate.js/releases">das aktuelle Release</a> heruntergeladen und entpackt, brauchst Du lediglich eine Datei namens index.html zu erstellen, um eine Demo des Datepickers zu codieren. Das Basis-Template sieht wie folgt aus:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;title&gt;pickadate.js demo&lt;/title&gt;
+	&lt;link rel="stylesheet" href="css/default.css"&gt;
+	&lt;link rel="stylesheet" href="css/default.date.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/picker.js"&gt;&lt;/script&gt;
+	&lt;script src="js/picker.date.js"&gt;&lt;/script&gt;
+	&lt;script src="js/legacy.js"&gt;&lt;/script&gt;
+	&lt;script src="js/de_DE.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_html_inputs">HTML inputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Anhand einem Geburtstagsfeld soll der date picker kurz erklärt werden.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;input class="datepicker birthday" type="text" placeholder="Geburtstag" /&gt;</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_jquery_function">jQuery function</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Picker ins Laufen zu kriegen.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;script type="text/javascript"&gt;
+	// Geburtstag
+	$('.birthday').pickadate({
+		selectMonths: true,
+		selectYears: 100,
+		max: true
+	});
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_der_komplette_code">Der komplette Code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Mit ein bißchen CSS sieht die index.html der Demo wie folgt aus</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta http-equiv="cache-control" content="no-cache"&gt;
+	&lt;meta http-equiv="pragma" content="no-cache"&gt;
+	&lt;title&gt;pickadate.js demo&lt;/title&gt;
+	&lt;link rel="stylesheet" href="css/default.css"&gt;
+	&lt;link rel="stylesheet" href="css/default.date.css"&gt;
+	&lt;style type="text/css"&gt;
+		body {
+			background-color: #333;
+			padding-top: 60px;
+			text-align: center
+		}
+		input {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.picker__select--month,
+		.picker__select--year {
+			height: 3em;
+		}
+		.picker__button--today,
+		.picker__button--clear,
+		.picker__button--close {
+			letter-spacing: -0.8px
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+	&lt;input class="datepicker birthday" type="text" placeholder="Geburtstag" /&gt;
+	&lt;br /&gt;&lt;br /&gt;
+	&lt;input class="datepicker firstday" type="text" placeholder="Versicherungsbeginn" /&gt;
+
+	&lt;script src="http://code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+	&lt;script src="js/picker.js"&gt;&lt;/script&gt;
+	&lt;script src="js/picker.date.js"&gt;&lt;/script&gt;
+	&lt;script src="js/legacy.js"&gt;&lt;/script&gt;
+	&lt;script src="js/de_DE.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript"&gt;
+		// Geburtstag
+		$('.birthday').pickadate({
+			selectMonths: true,
+			selectYears: 100,
+			max: true
+		});
+
+		// Versicherungsbeginn
+		$('.firstday').pickadate({
+			selectMonths: true,
+			selectYears: 2,
+			min: true
+		});
+	&lt;/script&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><a href="http://bloggerschmidt.de/demos/jquery/pickadate/pickadate.zip">Download Demo</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fazit">Fazit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Die vielen Einstellungsmöglichkeiten von pickadate.js, sowie die Unterstützung für alle gängigen Browser (ab IE8+) und mobile Geräte, machen die jQuery-Erweiterung zu ersten Wahl was Datepicker angehen. Die API sucht seinesgleichen und die lebendige Entwicklung unter GitHub spricht dafür, dass man mit dem Einsatz dieses Plugins auf das richtige Pferd setzt.</p>
+</div>
+</div>
+</div>
+    </section>
+
+  </article>
+
+  
+  <section class="post-comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'Bloggerschmidt'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </section>
+  
+
+
+
+            <footer class="footer">
+                <span class="footer__copyright">&copy; 2015. Alle Rechte vorbehalten.</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script>
+
+    <script type="text/javascript" src="http://bloggerschmidt.de/themes/uno/assets/js/main.js?v=1.0.0"></script>
+    <script type="text/javascript" src="http://bloggerschmidt.de/themes/uno/assets/js/hyphens.js?v=1.0.0"></script>
+    <script type="text/javascript">
+    	Hyphenator.config({
+    	    defaultlanguage: 'de',
+    		classname : 'post-title',
+    		minwordlength : 4
+    	});
+    	Hyphenator.run();
+    </script>
+        
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.rocks/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 18]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.rocks/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
+</body>
+</html>
