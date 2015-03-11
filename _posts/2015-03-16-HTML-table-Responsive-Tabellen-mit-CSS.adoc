@@ -75,20 +75,6 @@ Mit dieser ID schreiben wir unser CSS.
 ```
 @media only screen and (max-width: 600px) {
 	
-	#rotator .cf:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
-	}
-	#rotator * html .cf {
-		zoom: 1;
-	}
-	#rotator *:first-child+html .cf {
-		zoom: 1;
-	}
 	#rotator table {
 		display: block;
 		position: relative;
