@@ -1,0 +1,59 @@
+# HTML table: Responsive Tabellen mit CSS
+
+:published_at: 2015-03-16
+
+Tabellarischer Inhalt gehört in Tabellen. Doch um diese auf dem Smartphone korrekt anzuzeigen, bedarf es eines Kniffs: Man drehe die Spalten und Zeilen um und lässt die Tabelle horizontal scrollen. Das funktioniert auch mit dem Daumen. So geht's.
+
+## Demo
+
+http://bloggerschmidt.de/demos/html/responsivetable[Siehe HTML responsive table Demo]
+
+## Die Tabelle
+
+Dafür brauchen wir tabellarischen Inhalt, z. B.:
+
+```
+<table>
+	<thead>
+		<tr>
+			<th>Berlin</th>
+			<th>Hamburg</th>
+			<th>M&uuml;nchen</th>
+			<th>Frankfurt</th>
+			<th>Bad&nbsp;Nauheim</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Milj&ouml;h</td>
+			<td>Kiez</td>
+			<td>Bierdampf</td>
+			<td>Sachsenhausen</td>
+			<td>Kolonnaden</td>
+		</tr>
+		<tr>
+			<td>Buletten</td>
+			<td>Frikadellen</td>
+			<td>Fleischpflanzerl</td>
+			<td>Gr&uuml;ne So&szlig;e</td>
+			<td>Irgendwas mit Elvis</td>
+		</tr>
+		<tr>
+			<td>Siegessäule</td>
+			<td>Elbtunnel</td>
+			<td>Hofbr&auml;uhaus</td>
+			<td>Goetheturm</td>
+			<td>Elvis-Boulevard</td>
+		</tr>
+		<tr>
+			<td>Assoziation&nbsp;1</td>
+			<td>Assoziation&nbsp;2</td>
+			<td>Assoziation&nbsp;3</td>
+			<td>Assoziation&nbsp;4</td>
+			<td>Assoziation&nbsp;5</td>
+		</tr>
+	</tbody>
+</table>
+```
+
+Gut. Das ist eine Tabelle. Nutzen wir das http://getbootstrap.com/[Bootstrap-Framework], dann sieht sie mithilfe der Klassen `table table-bordered table-striped` sogar gut aus.
