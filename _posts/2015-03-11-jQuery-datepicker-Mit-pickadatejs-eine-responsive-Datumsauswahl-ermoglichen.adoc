@@ -4,3 +4,31 @@
 
 Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht http://amsul.ca/pickadate.js/[pickadate.js] bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist auch die deutsche anzutreffen.
 
+## Demo
+
+http://bloggerschmidt.de/demos/jquery/pickadate/[Siehe jQuery pickadate.js Demo]
+
+## pickadate.js
+
+Die unter dem Pseudonym https://github.com/amsul[amsul] erstellte Erweiterung wird https://github.com/amsul/pickadate.js[unter GitHub] entwickelt. Neben dem http://amsul.ca/pickadate.js/date/[date picker] existiert auch ein http://amsul.ca/pickadate.js/time/[time picker] und um eigenen Funktionalitäten mit einzubauen, hilft http://amsul.ca/pickadate.js/api/[die Dokumentation der API] weiter.
+
+## HTML inputs
+
+Anhand einem Geburtstagsfeld soll der date picker kurz erklärt werden.
+
+  <input class="datepicker birthday" type="text" placeholder="Geburtstag" />
+
+## jQuery function
+
+Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Picker ins Laufen zu kriegen.
+
+```
+<script type="text/javascript">
+	// Geburtstag
+	$('.birthday').pickadate({
+		selectMonths: true,
+		selectYears: 100,
+		max: true
+	});
+</script>
+```
