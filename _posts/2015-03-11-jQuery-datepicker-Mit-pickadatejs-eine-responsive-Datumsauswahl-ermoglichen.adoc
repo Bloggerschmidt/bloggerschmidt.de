@@ -46,15 +46,19 @@ Ist https://github.com/amsul/pickadate.js/releases[das aktuelle Release] herunte
 </html>
 ```
 
+Nach dem HTML5-Standard kommen die nötigen CSS-Dateien in den head und alle JavaScript-Dateien vor das schließende body-Tag. Die CSS-Dateien gehören zum Standard-Theme und können nach belieben erweitert werden. Nach der jQuery-Datei werden vier pickadate-Dateien geladen: picker.js und picker.date.js für den datepicker, legacy.js für den Browser-Support ab IE8+ und die deutsche Übersetzung de_DE.js. Jetzt kann es losgehen!
+
 ## HTML inputs
 
 Anhand einem Geburtstagsfeld soll der date picker kurz erklärt werden.
 
   <input class="datepicker birthday" type="text" placeholder="Geburtstag" />
 
+Die Klasse `datepicker` ist Pflicht, um das Plugin anzusprechen. Über die Klasse `birthday` bringen wir im nächsten Schritt den Picker zum Laufen.
+
 ## jQuery function
 
-Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Picker ins Laufen zu kriegen.
+Folgendes jQuery hört auf die Klasse `birthday`:
 
 ```
 <script type="text/javascript">
@@ -66,6 +70,7 @@ Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Pic
 	});
 </script>
 ```
+Um Monate frei wählbar zu machen, setzen wir selectMonths auf true. Weiterhin sollen bis zu 100 Jahre auswählbar sein. Ist max auf true gesetzt, kann ein Datum nur aus der Vergangenheit gewählt werden.
 
 ## Der komplette Code
 
