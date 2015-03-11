@@ -46,7 +46,7 @@ Ist https://github.com/amsul/pickadate.js/releases[das aktuelle Release] herunte
 </html>
 ```
 
-Nach dem HTML5-Standard kommen die nötigen CSS-Dateien in den head und alle JavaScript-Dateien vor das schließende body-Tag. Die CSS-Dateien gehören zum Standard-Theme und können nach belieben erweitert werden. Nach der jQuery-Datei werden vier pickadate-Dateien geladen: picker.js und picker.date.js für den datepicker, legacy.js für den Browser-Support ab IE8+ und die deutsche Übersetzung de_DE.js. Jetzt kann es losgehen!
+Nach dem HTML5-Standard kommen die nötigen CSS-Dateien in den head und alle JavaScript-Dateien vor das schließende body-Tag. Die CSS-Dateien gehören zum Standard-Theme und können nach belieben erweitert werden. Nach der jQuery-Datei werden vier pickadate-Dateien geladen: picker.js und picker.date.js für den datepicker, legacy.js für den Browser-Support ab IE8+ und die deutsche Übersetzung de_DE.js.
 
 ## HTML inputs
 
