@@ -70,7 +70,7 @@ Folgendes jQuery hört auf die Klasse `birthday`:
 	});
 </script>
 ```
-Um Monate frei wählbar zu machen, setzen wir selectMonths auf true. Weiterhin sollen bis zu 100 Jahre auswählbar sein. Ist max auf true gesetzt, kann ein Datum nur aus der Vergangenheit gewählt werden.
+Um die Monate frei wählbar zu machen, setzen wir `selectMonths` auf `true`. Weiterhin sollen bis zu 100 Jahre auswählbar sein mit `selectYears: 100`. Ist `max` auf `true` gesetzt, kann ein Datum nur aus der Vergangenheit gewählt werden. Ansonsten würden die 100 Jahre auf 50 Jahre in der Vergangenheit und 50 Jahre in der Zukunft aufgeteilt.
 
 ## Der komplette Code
 
