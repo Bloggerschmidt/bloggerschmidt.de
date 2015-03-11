@@ -1,0 +1,4 @@
+# jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen
+
+:published_at: 2015-03-11
+
