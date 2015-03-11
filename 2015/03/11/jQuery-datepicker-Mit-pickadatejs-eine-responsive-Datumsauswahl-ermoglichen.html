@@ -36,7 +36,7 @@
     <meta property="og:description" content="Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht pickadate.js bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist..." />
     <meta property="og:url" content="http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html" />
     <meta property="article:published_time" content="2015-03-10T23:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-03-11T07:20:15.900Z" />
+    <meta property="article:modified_time" content="2015-03-11T07:31:40.305Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen" />
@@ -58,7 +58,7 @@
     "headline": "jQuery datepicker: Mit pickadate.js eine responsive Datumsauswahl ermöglichen",
     "url": "http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html",
     "datePublished": "2015-03-10T23:00:00.000Z",
-    "dateModified": "2015-03-11T07:20:15.900Z",
+    "dateModified": "2015-03-11T07:31:40.305Z",
     "description": "Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht pickadate.js bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist..."
 }
     </script>
@@ -240,6 +240,9 @@
 &lt;/html&gt;</code></pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Nach dem HTML5-Standard kommen die nötigen CSS-Dateien in den head und alle JavaScript-Dateien vor das schließende body-Tag. Die CSS-Dateien gehören zum Standard-Theme und können nach belieben erweitert werden. Nach der jQuery-Datei werden vier pickadate-Dateien geladen: picker.js und picker.date.js für den datepicker, legacy.js für den Browser-Support ab IE8+ und die deutsche Übersetzung de_DE.js. Jetzt kann es losgehen!</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -253,13 +256,16 @@
 <pre>&lt;input class="datepicker birthday" type="text" placeholder="Geburtstag" /&gt;</pre>
 </div>
 </div>
+<div class="paragraph">
+<p>Die Klasse <code>datepicker</code> ist Pflicht, um das Plugin anzusprechen. Über die Klasse <code>birthday</code> bringen wir im nächsten Schritt den Picker zum Laufen.</p>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_jquery_function">jQuery function</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Picker ins Laufen zu kriegen.</p>
+<p>Folgendes jQuery hört auf die Klasse <code>birthday</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -272,6 +278,9 @@
 	});
 &lt;/script&gt;</code></pre>
 </div>
+</div>
+<div class="paragraph">
+<p>Um Monate frei wählbar zu machen, setzen wir selectMonths auf true. Weiterhin sollen bis zu 100 Jahre auswählbar sein. Ist max auf true gesetzt, kann ein Datum nur aus der Vergangenheit gewählt werden.</p>
 </div>
 </div>
 </div>
