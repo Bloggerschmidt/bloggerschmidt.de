@@ -2,3 +2,5 @@
 
 :published_at: 2015-03-11
 
+Wer eine Datums- und/oder Zeitauswahl sucht, die geräteunabhängig funktioniert und auf der JavaScript-Bibliothek jQuery fusst, wird mit dem kostenfreien Leichtgewicht http://amsul.ca/pickadate.js/[pickadate.js] bestens bedient. Das Addon kommt mit eigener Bibliothek, Themes und API und unter den 44 Übersetzungen ist auch die deutsche anzutreffen.
+
