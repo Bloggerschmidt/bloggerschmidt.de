@@ -137,6 +137,7 @@ Mit ein bißchen CSS sieht die index.html der Demo wie folgt aus
 
 </html>
 ```
+http://bloggerschmidt.de/demos/jquery/pickadate/pickadate.zip[Download Demo]
 
 ## Fazit
 
