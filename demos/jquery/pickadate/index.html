@@ -20,9 +20,6 @@
 			border: 1px solid #ccc;
 			padding: 10px;
 		}
-		a {
-			color: white;
-		}
 		.picker__select--month, 
 		.picker__select--year {
 			height: 3em;
@@ -37,8 +34,9 @@
 
 <body>
 
-	<input class="datepicker birthday" type="text" placeholder="Geburtstag" /><br /><br />
-	<a href="http://bloggerschmidt.de/2015/03/11/jQuery-datepicker-Mit-pickadatejs-eine-responsive-Datumsauswahl-ermoglichen.html" alt="">&lt; Zurück zum Beitrag</a>
+	<input class="datepicker birthday" type="text" placeholder="Geburtstag" />
+	<br /><br />
+	<input class="datepicker firstday" type="text" placeholder="Versicherungsbeginn" />
 
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="js/picker.js"></script>
@@ -51,6 +49,13 @@
 			selectMonths: true,
 			selectYears: 100,
 			max: true
+		});
+
+		// Versicherungsbeginn
+		$('.firstday').pickadate({
+			selectMonths: true,
+			selectYears: 2,
+			min: true
 		});
 	</script>
 
