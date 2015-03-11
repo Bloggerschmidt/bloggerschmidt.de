@@ -24,7 +24,7 @@ Die unter dem Pseudonym https://github.com/amsul[amsul] erstellte Erweiterung wi
 
 ## Vorbereitung
 
-Ist https://github.com/amsul/pickadate.js/releases[das aktuelle Release] heruntergeladen und entpackt, brauchst Du lediglich eine Datei namens index.html zu erstellen, um eine Demo des Datepickers zu codieren. Der Inhalt könnte wie folgt aussehen:
+Ist https://github.com/amsul/pickadate.js/releases[das aktuelle Release] heruntergeladen und entpackt, brauchst Du lediglich eine Datei namens index.html zu erstellen, um eine Demo des Datepickers zu codieren. Das Basis-Template sieht wie folgt aus:
 
 ```
 <!DOCTYPE html>
