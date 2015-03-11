@@ -12,7 +12,17 @@ http://bloggerschmidt.de/demos/jquery/pickadate/[Siehe jQuery pickadate.js Demo]
 
 Die unter dem Pseudonym https://github.com/amsul[amsul] erstellte Erweiterung wird https://github.com/amsul/pickadate.js[unter GitHub] entwickelt. Neben dem http://amsul.ca/pickadate.js/date/[date picker] existiert auch ein http://amsul.ca/pickadate.js/time/[time picker] und um eigenen Funktionalitäten mit einzubauen, hilft http://amsul.ca/pickadate.js/api/[die Dokumentation der API] weiter.
 
-*Vorbereitung*
+## Features
+
+- Support für http://jquery.com/[jQuery ab 1.7]
+- Touch- und Tastatur-freundlich
+- Browser-Suppport ab IE8+
+- Übersetzungen für 44 Sprachen (auch deutsch)
+- Folgt der https://en.bem.info/[BEM Klassennamensgebung]
+- http://lesscss.org/[LESS] basierte Stylesheets
+- Basiert auf dem http://gruntjs.com/[Grunt] Build System
+
+## Vorbereitung
 
 Ist https://github.com/amsul/pickadate.js/releases[das aktuelle Release] heruntergeladen und entpackt, brauchst Du lediglich eine Datei namens index.html zu erstellen, um eine Demo des Datepickers zu codieren. Der Inhalt könnte wie folgt aussehen:
 
@@ -56,3 +66,78 @@ Hat man die nötigen Dateien eingebunden, brauchst Du nur wenig Code, um den Pic
 	});
 </script>
 ```
+
+## Der komplette Code
+
+Mit ein bißchen CSS sieht die index.html der Demo wie folgt aus
+
+```
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<title>pickadate.js demo</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/default.date.css">
+	<style type="text/css">
+		body {
+			background-color: #333;
+			padding-top: 60px;
+			text-align: center
+		}
+		input {
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		.picker__select--month, 
+		.picker__select--year {
+			height: 3em;
+		}
+		.picker__button--today, 
+		.picker__button--clear, 
+		.picker__button--close {
+			letter-spacing: -0.8px
+		}
+	</style>
+</head>
+
+<body>
+
+	<input class="datepicker birthday" type="text" placeholder="Geburtstag" />
+	<br /><br />
+	<input class="datepicker firstday" type="text" placeholder="Versicherungsbeginn" />
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/legacy.js"></script>
+	<script src="js/de_DE.js"></script>
+	<script type="text/javascript">
+		// Geburtstag
+		$('.birthday').pickadate({
+			selectMonths: true,
+			selectYears: 100,
+			max: true
+		});
+
+		// Versicherungsbeginn
+		$('.firstday').pickadate({
+			selectMonths: true,
+			selectYears: 2,
+			min: true
+		});
+	</script>
+
+</body>
+
+</html>
+```
+
+## Fazit
+
+Die vielen Einstellungsmöglichkeiten von pickadate.js, sowie die Unterstützung für alle gängigen Browser (ab IE8+) und mobile Geräte, machen die jQuery-Erweiterung zu ersten Wahl was Datepicker angehen. Die API sucht seinesgleichen und die lebendige Entwicklung unter GitHub spricht dafür, dass man mit dem Einsatz dieses Plugins auf das richtige Pferd setzt.
