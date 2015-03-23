@@ -28,8 +28,7 @@
 
     {{! Styles and Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno.css"}}" />
-    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{asset "images/favicon.ico"}}" />
-    
+
     {{! Ghost Magic }}
     {{ghost_head}}
 
@@ -45,7 +44,6 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <a href="http://jandbeyond.org" target="_blank" title="J and Beyond 2015 | An International Joomla! Conference - May 29 - 31, 2015, Prague, Czech Republic"><img class="banner" border="0" alt="J and Beyond 2015 | An International Joomla! Conference - May 29 - 31, 2015, Prague, Czech Republic" src="http://jandbeyond.org/images/2015_banner/JAB15-Banner-wide.png" /></a>
             {{{body}}}
 
             {{> footer}}
@@ -57,15 +55,7 @@
 
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/hyphens.js"}}"></script>
-    <script type="text/javascript">
-    	Hyphenator.config({
-    	    defaultlanguage: 'de',
-    		classname : 'post-title',
-    		minwordlength : 4
-    	});
-    	Hyphenator.run();
-    </script>
+    
     {{#if @blog.googleAnalytics}}
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -78,22 +68,6 @@
 
     </script>
     {{/if}}
-        
-    <!-- Piwik -->
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//piwik.rocks/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', 18]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="//piwik.rocks/piwik.php?idsite=18" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
 
 </body>
 </html>

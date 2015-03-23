@@ -6,9 +6,8 @@
 
     <header class="post-header">
       <div class="post-meta">
-        <time datetime="{{date format="DD.MM.YYYY"}}" class="post-meta__date date">{{date format="DD.MM.YYYY"}}</time> &#8226; <span class="post-meta__tags tags">{{tags prefix="on "}}</span>
-        <span class="post-meta__author author"><img src="{{author.image}}" alt="Profilbild von {{author.name}}" class="avatar post-meta__avatar" /> von {{author.name}}</span>
-        <script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'left';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#C7C7C7;text-decoration:none;font-size:0.8em;" class="printfriendly" onclick="window.print();return false;" title="Drucken, PDF">Drucken, PDF</a>
+        <time datetime="{{date format="DD MMM YYYY"}}" class="post-meta__date date">{{date format="DD MMM YYYY"}}</time> &#8226; <span class="post-meta__tags tags">{{tags prefix="on "}}</span>
+        <span class="post-meta__author author"><img src="{{author.image}}" alt="profile image for {{author.name}}" class="avatar post-meta__avatar" /> by {{author.name}}</span>
       </div>
       <h1 class="post-title">{{{title}}}</h1>
     </header>
