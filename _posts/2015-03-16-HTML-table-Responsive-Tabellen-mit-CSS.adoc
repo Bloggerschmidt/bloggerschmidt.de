@@ -136,4 +136,4 @@ Mit dieser ID schreiben wir unser CSS.
 }
 ```
 
-Muah! Was passiert denn hier?! Ein bissl CSS-Kung-Fu. 
+Muah! Was passiert denn hier?! Ein bissl CSS-Kung-Fu. Die ID `#rotator` hilft uns unsere Tabelle neu zu definieren. Die neue Darstellung wird im Großen und Ganzen über `display: block;` gewährleistet. Ist das Attribut gesetzt, wird der Tabellenkopf `thead` links ausgerichtet über `float: left;`. Der Tabellenrumpf `tbody` bekommt dann noch ein `overflow-x: auto;`, damit ein horizontaler Balken fürs Scrollen erscheint. Der Rest ist Kosmetik.
