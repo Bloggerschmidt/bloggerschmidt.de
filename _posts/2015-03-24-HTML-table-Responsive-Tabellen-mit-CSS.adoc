@@ -1,6 +1,6 @@
 # HTML table: Responsive Tabellen mit CSS
 
-:published_at: 2015-03-16
+:published_at: 2015-03-24
 
 Tabellarischer Inhalt gehört in Tabellen. Doch um diese auf dem Smartphone korrekt anzuzeigen, bedarf es eines Kniffs: Man drehe die Spalten und Zeilen um und lässt die Tabelle horizontal scrollen. Das funktioniert auch mit dem Daumen. So geht's.
 
