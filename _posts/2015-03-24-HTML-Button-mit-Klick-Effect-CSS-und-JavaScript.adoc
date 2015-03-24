@@ -1,0 +1,8 @@
+# HTML Button mit Klick-Effect (CSS und JavaScript) 
+
+:published_at: 2015-03-24
+
+Einfache Buttons sind langweilig. Gut, dass es CSS und JavaScript gibt, um die Knöpfe ein wenig aufzufrischen. Das folgende Code-Beispiel soll zu Inspiration dienen.
+
+<p data-height="674" data-theme-id="0" data-slug-hash="QwYKaM" data-default-tab="result" data-user="Bloggerschmidt" class='codepen'>See the Pen <a href='http://codepen.io/Bloggerschmidt/pen/QwYKaM/'>button with ink effect</a> by Alexander Schmidt (<a href='http://codepen.io/Bloggerschmidt'>@Bloggerschmidt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
