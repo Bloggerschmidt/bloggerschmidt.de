@@ -36,3 +36,4 @@ cd webproject
 git remote add webdev ssh://user@host/path/to/public_html/webproject
 git push webdev master
 ```
+Nach der Eingabe heißt es einmalig dem Server-Zertifikat zu vertrauen (Bestätigung mit yes) und das Passwort einzugeben. Danach wird das lokale Projekt online gestellt.
