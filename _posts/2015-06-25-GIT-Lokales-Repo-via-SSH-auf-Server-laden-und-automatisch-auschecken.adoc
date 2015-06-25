@@ -16,11 +16,11 @@ cd webproject
 git init
 git config --bool core.bare true
 ```
-Mit der letzten Zeile setzt Du das Repo nachträglich auf 'bare'. Es hat dann keinen Working Tree. Der Hintergrund ist der, dass Du lokale Änderungen einfach pushen kannst und es vom Server direkt angenommen werden soll.
+Mit der letzten Zeile setzt Du das Repo nachträglich auf `bare`. Es hat dann keinen Working Tree. Der Hintergrund ist der, dass Du lokale Änderungen einfach pushen kannst und es vom Server direkt angenommen werden soll.
 
 ## Ein Hook für das automatische Auschecken
 
-Damit bei einem push der Server das Repo automatisch zusammenführt, bedarf es eines Hooks post. Gehe dazu in das (versteckte) Verzeichnis .git in den Ordner hooks und benenne die Datei post-receive.sample um in post-receive (ohne .sample). Danach öffnest Du die Datei und schreibst als letzte Zeile Folgendes:
+Damit bei einem push der Server das Repo automatisch zusammenführt, bedarf es eines Hooks *post.receive*. Gehe dazu in das (versteckte) Verzeichnis _.git_ in den Ordner _hooks_ und benenne die Datei _post-receive.sample_ um in _post-receive_ (ohne .sample). Danach öffnest Du die Datei und schreibst als letzte Zeile Folgendes:
 
 ```
 GIT_WORK_TREE=/path/to/public_html/webproject git checkout -f
