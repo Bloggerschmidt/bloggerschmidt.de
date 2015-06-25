@@ -1,3 +1,4 @@
-# GIT: 
+# GIT: Lokales Repository via SSH auf Server pushen und automatisch auschecken
 
 :published_at: 2015-06-25
+
