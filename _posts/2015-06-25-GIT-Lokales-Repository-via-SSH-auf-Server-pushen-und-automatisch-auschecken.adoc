@@ -2,3 +2,30 @@
 
 :published_at: 2015-06-25
 
+Hat man lokal ein Webprojekt mit GIT laufen, kommt irgendwann der Zeitpunkt, dass es auf den Server hochgeladen werden soll. Dazu legt man auf dem Server ein leeres Repository an und lädt das lokale hoch. Via SSH und einem Hook geht das recht einfach.
+
+## Leeres Repo auf dem Server
+
+Logge Dich zuerst via SSH auf den Server ein und initialisiere eine neues GIT-Projekt.
+
+```
+ssh user@host
+cd /path/to/public_html/
+mkdir webproject
+cd webproject
+git init
+git config --bool core.bare true
+```
+Mit der letzten Zeile setzt Du das Repo nachträglich auf 'bare'. Es hat dann keinen Working Tree. Der Hintergrund ist der, dass Du lokale Änderungen einfach pushen kannst und es vom Server direkt angenommen werden soll.
+
+## Hook für automatische Auschecken
+
+Damit bei einem push der Server das Repo automatisch zusammenführt, bedarf es eines Hooks post. Gehe dazu in das (versteckte) Verzeichnis .git in den Ordner hooks und benenne die Datei post-receive.sample um in post-receive (ohne .sample). Danach öffnest Du die Datei und schreibst als letzte Zeile Folgendes:
+
+```
+GIT_WORK_TREE=/path/to/public_html/webproject git checkout -f
+```
+Abspeichern. Fertig. Nun wird jeder push automatisch gemerged (was für Denglish).
+
+## Push via SSH
+
