@@ -29,3 +29,10 @@ Abspeichern. Fertig. Nun wird jeder push automatisch gemerged (was für Denglish
 
 ## Push via SSH
 
+Nun heißt es das lokale Repo auf den Server zu bringen.
+
+```
+cd webproject
+git remote add webdev ssh://user@host/path/to/public_html/webproject
+git push webdev master
+```
