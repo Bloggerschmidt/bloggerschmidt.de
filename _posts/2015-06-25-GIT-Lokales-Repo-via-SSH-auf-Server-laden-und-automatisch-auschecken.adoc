@@ -25,7 +25,7 @@ Damit bei einem push der Server das Repo automatisch zusammenführt, bedarf es e
 ```
 GIT_WORK_TREE=/path/to/public_html/webproject git checkout -f
 ```
-Abspeichern. Fertig. Nun wird jeder push automatisch gemerged (was für Denglish).
+Abspeichern. Fertig. Nun wird jeder push automatisch gemerged (was für ein Denglish).
 
 ## Push via SSH
 
